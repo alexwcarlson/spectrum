@@ -2,8 +2,10 @@
 //added skeleton base files to compilation to reduce number of server requests
 @import "vendor/normalize";
 @import "vendor/skeleton";
+@import "vendor/font-awesome";
 
 @import "modules/colors";
 @import "partials/fonts";
 @import "partials/base";
 @import "partials/header";
+@import "partials/footer";

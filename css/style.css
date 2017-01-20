@@ -3190,10 +3190,19 @@ header {
   width: 100%;
   max-width: 100%;
   height: 70px;
-  background-color: #333;
+  background-color: #111;
   position: fixed;
   top: 0;
   left: 0; }
+
+a.logo {
+  display: block;
+  float: left;
+  margin: 10px 20px;
+  position: relative; }
+  a.logo img.s-logo {
+    height: 50px;
+    width: auto; }
 
 .nav-button {
   margin: 20px;
@@ -3237,13 +3246,12 @@ header {
   -ms-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
-  transform: scale(0, 0);
-  opacity: .9; }
+  transform: scale(0, 0); }
   .nav-menu .nav-close {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 30px;
+    margin: 10px;
     width: 40px;
     height: 40px;
     -webkit-transition: all .3s ease;
@@ -3310,10 +3318,10 @@ header {
       display: block;
       padding: 0 10px;
       position: absolute;
-      top: 30px;
-      bottom: 10px;
-      left: 50px;
-      right: 50px;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
       border: 1px solid #FFF;
       text-align: center;
       background-color: #111;
@@ -3324,38 +3332,98 @@ header {
       -ms-transition: all .3s ease;
       -o-transition: all .3s ease;
       transition: all .3s ease; }
+      @media (min-width: 425px) {
+        .nav-menu ul li {
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px; } }
+      @media (min-width: 600px) {
+        .nav-menu ul li {
+          top: 30px;
+          left: 5%;
+          right: 5%;
+          bottom: 10px; } }
       .nav-menu ul li:hover {
         background-color: #E41F26; }
       .nav-menu ul li:nth-child(2) {
-        top: 100px;
-        bottom: 25px;
-        left: 100px;
-        right: 100px;
+        top: 50px;
+        bottom: 15px;
+        left: 5%;
+        right: 5%;
         z-index: 2; }
+        @media (min-width: 425px) {
+          .nav-menu ul li:nth-child(2) {
+            top: 50px;
+            bottom: 25px;
+            left: 10%;
+            right: 10%; } }
+        @media (min-width: 600px) {
+          .nav-menu ul li:nth-child(2) {
+            top: 80px;
+            bottom: 20px;
+            left: 10%;
+            right: 10%; } }
         .nav-menu ul li:nth-child(2):hover {
           background-color: #EC6523; }
       .nav-menu ul li:nth-child(3) {
-        top: 170px;
-        bottom: 40px;
-        left: 150px;
-        right: 150px;
+        top: 100px;
+        bottom: 30px;
+        left: 10%;
+        right: 10%;
         z-index: 3; }
+        @media (min-width: 425px) {
+          .nav-menu ul li:nth-child(3) {
+            top: 100px;
+            bottom: 30px;
+            left: 15%;
+            right: 15%; } }
+        @media (min-width: 600px) {
+          .nav-menu ul li:nth-child(3) {
+            top: 130px;
+            bottom: 40px;
+            left: 15%;
+            right: 15%; } }
         .nav-menu ul li:nth-child(3):hover {
           background-color: #F8BC16; }
       .nav-menu ul li:nth-child(4) {
-        top: 240px;
-        bottom: 55px;
-        left: 200px;
-        right: 200px;
+        top: 150px;
+        bottom: 45px;
+        left: 15%;
+        right: 15%;
         z-index: 4; }
+        @media (min-width: 425px) {
+          .nav-menu ul li:nth-child(4) {
+            top: 150px;
+            bottom: 40px;
+            left: 20%;
+            right: 20%; } }
+        @media (min-width: 600px) {
+          .nav-menu ul li:nth-child(4) {
+            top: 180px;
+            bottom: 55px;
+            left: 20%;
+            right: 20%; } }
         .nav-menu ul li:nth-child(4):hover {
           background-color: #019A49; }
       .nav-menu ul li.social {
-        top: 310px;
-        bottom: 70px;
-        left: 250px;
-        right: 250px;
+        top: 200px;
+        bottom: 60px;
+        left: 20%;
+        right: 20%;
         z-index: 4; }
+        @media (min-width: 425px) {
+          .nav-menu ul li.social {
+            top: 200px;
+            bottom: 50px;
+            left: 25%;
+            right: 25%; } }
+        @media (min-width: 600px) {
+          .nav-menu ul li.social {
+            top: 230px;
+            bottom: 70px;
+            left: 25%;
+            right: 25%; } }
         .nav-menu ul li.social:hover {
           background-color: #572C81; }
       .nav-menu ul li a {

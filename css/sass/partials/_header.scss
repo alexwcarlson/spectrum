@@ -8,10 +8,18 @@ header {
   left: 0;
 }
 a.logo{
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
   display: block;
   float: left;
   margin:10px 20px;
   position: relative;
+  &:hover{
+    filter: brightness(195%);
+  }
   img{
     &.s-logo{
       height:50px;

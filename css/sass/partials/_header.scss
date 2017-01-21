@@ -6,6 +6,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 a.logo{
   -webkit-transition: all .3s ease;

@@ -1,1 +1,33 @@
 //footer styles
+
+footer {
+	background-color: #111;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+div.footer-links a {
+	font-family: $secondaryFont;
+	text-decoration: none;
+	padding: 0 10px;
+	color: $wht;
+}
+img.s-logo {
+	height: 50px;
+    width: auto;
+}
+div.social-media {
+	float: left;
+	width: 30px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+	margin: 10px;
+}
+div.social-media a {
+	color: #fff;
+}
+div.copyright {
+	color: #fff;
+}

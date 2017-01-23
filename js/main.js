@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $('.nav-button').click(function(){
         $('.nav-menu').css('transform','scale(1,1)');
-
     });
 $('.nav-close').click(function(){
     $('.nav-menu').css('transform', 'scale(0,0)');
@@ -21,6 +20,37 @@ $('.nav-close').click(function(){
             window.location.hash = target;
         } );
     } );
+
+    $(window).scroll(function () {
+        var docHeight = $(document).height();
+        var winHeight = $(window).height();
+        var pageHeight = docHeight - winHeight;
+        var docOffset = $(document).scrollTop();
+        var slideFast = pageHeight * .1;
+        var decBar = docOffset / pageHeight;
+        var percentBar = decBar * 100 + '%';
+        var slowCrawl =  (decBar / 2) * 100 + '%';
+        $('#info').css("background-position", '0 ' + slowCrawl);
+
+        var wideLogoWidth = $('.wide-logo').width();
+        $('.logo').width(wideLogoWidth);
+
+if(docOffset > heroHeight){
+    $('.slider').fadeIn();
+        $('.logo .wide-logo').height('30');
+    $('.logo .s-logo').fadeOut();
+}
+else{
+    $('.slider').fadeOut();
+        $('.widelogo').height('50');
+        $('.s-logo').fadeIn();
+};
+
+        // $('.slider').css("width", percentBar);
+    });
+
+
+
     // svg drawing below
 
     // // Get a reference to the <path>

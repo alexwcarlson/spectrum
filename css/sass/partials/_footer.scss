@@ -1,10 +1,14 @@
 //footer styles
 
 footer {
-	background-color: #000;
+
 	padding-top: 20px;
 	padding-bottom: 20px;
 	width: 100%;
+	background-image: url('../images/footer-bg.png');
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-position: center top;
 }
 
 div.footer-links a {
@@ -12,6 +16,7 @@ div.footer-links a {
 	text-decoration: none;
 	padding: 0 10px;
 	color: $wht;
+	margin:10px 0;
 }
 img.s-logo {
 	height: 50px;
@@ -19,17 +24,18 @@ img.s-logo {
 }
 div.social-media {
 	float: left;
-	width: 30px;
-	height:30px;
+	width: 40px;
+	height:40px;
 	border: 1px solid #fff;
 	border-radius: 50%;
 	text-align: center;
-	margin: 10px;
+	margin: 15px 10px;
 }
 div.social-media a {
 	color: #fff;
-	line-height:30px;
+	line-height:40px;
 	vertical-align: middle;
+	font-size:1.5em;
 }
 div.copyright {
 	color: #fff;
